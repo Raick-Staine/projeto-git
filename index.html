@@ -1,13 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Git Hub</title>
+    <title>Adega GoldenBeer</title>
+    <link rel="icon" href="img/favicon-16x16.png">
+
+    <script src="https://kit.fontawesome.com/2572ff7e65.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/componentes/header.css">
+    <link rel="stylesheet" href="css/componentes/footer.css">
+    <link rel="stylesheet" href="css/componentes/aside-i.css">
+    <link rel="stylesheet" href="css/reset.css">
 </head>
+
 <body>
-    <h1>Meu WebSite</h1>
-    <h2>Bem Vindo</h2>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, dolorem quos labore inventore omnis iste!</p>
+    <div class="container">
+        <header>
+            <div class="container-flex">
+                <img src="img/logo.png" alt="Logo - GoldenBeer" width="160px" class="logo">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="#Inicio">Início</a></li>
+                        <li><a href="#Produtos">Produtos</a></li>
+                        <li><a href="#Contato">Contato</a></li>
+                        <li><a href="#Sobre">Sobre</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <script type="text/javascript">
+            const hamburger = document.querySelector('.hamburger');
+            const menu = document.querySelector('.menu');
+
+            hamburger.addEventListener('click', () => {
+                menu.classList.toggle('active');
+            });
+        </script>
+
+        <aside id="Inicio">
+            <br>
+            <br>
+            <img src="img/slogan.jpg" alt="Img-slogan" class="img-slogan">
+
+            <div class="localizacao">
+                <h3 class="h3-maps">Localização da Adega</h3>
+                <img src="img/localizacao.jpg" alt="Localização da Adega" class="img-localizacao">
+                <p class="p-localizacao">Local: Av.Vasconcelos-Maiade-Assis, N°400. Próximo á Praçada Cultura
+                </p>
+            </div>
+        </aside>
+
+        <div class="linha-aside"></div>
+
+        <aside id="Produtos">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="h1-principal">Produtos</h1>
+
+            <div class="cardapio">
+                <img src="img/ccardapio.jpg" alt="Cardapio" class="produtos">
+
+                <div class="pedido">
+                    <div></div>
+                    <h3 class="h3-principal"><a href="tel:(12)99791-2083">Clique aqui para e faça seu pedido</a></h3>
+                    <div class="linha"></div>
+                </div>
+
+                <div class="carrossel">
+                    <div class="grid-drink">
+                        <img src="img/drink.jpg" alt="Drink" class="img-drink">
+                        <p class="p-drink">Fornecemos doses que são feitas na hora de acordo com a sua preferência.</p>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <div class="linha-aside"></div>
+
+        <aside id="Contato">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="h1-principal">Nossos Contatos</h1>
+
+            <h3 class="h3-c">Essas são nossas redes sociais onde você terá o nosso contato. Nosso whatsapp poderá ser
+                usado para fazer chamadas de voz, compartilhar mídia, e até mesmo realizar transações comerciais. Nosso
+                instagram terá todas as notícias como: Promoções, desacontos, avisos, compartilhamento de informações e
+                entre outros. E por último nosso E-mail, que poderá ser usado para comunicação, fechamentos de
+                parcerias, envios de documentos, coordenação de projetos e entre outros. Basta clicar no link da
+                plataforma abaixo que você queira entrar em contato.</h3>
+            <br>
+            <br>
+            <br>
+
+            <p class="p-principal"><a href="tel:(12)9979-12083"><i class="fa-brands fa-whatsapp"></i> (12)
+                    99791-2083</a></p>
+
+            <p class="p-principal"><a href="#"><i class="fa-brands fa-instagram"></i> @adega_goldenbeer</a></p>
+
+            <p class="p-principal"><a href="mailto:goldenbeer@gmail.com"><i class="fa-regular fa-envelope"></i>
+                    @goldenbeer@gmail.com</a></p>
+        </aside>
+
+        <div class="linha-aside"></div>
+
+        <aside id="Sobre">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h1 class="h1-principal">Sobre a Adega</h1>
+            <br>
+
+            <div class="grid-sobre">
+                <div class="grid-mvv">
+                    <h3 class="h3-s">Missão</h3>
+                    <p class="p-as1">Proporcionar aos nossos clientes uma experiência única ao explorar e desfrutar das
+                        bebidas de alta qualidade de nossa adega e oferecendo um atendimento personalizado e
+                        especializado para todos.</p>
+                </div>
+                <div class="grid-mvv">
+                    <h3 class="h3-s">Visão</h3>
+                    <p class="p-as1">Nosso objetivo é ser reconhecidos como a melhor adega com os melhores preços da
+                        região, e pelo ambiente acolhedor e sofisticado da nossa loja e conhecimento e paixão de nossa
+                        equipe. </p>
+                </div>
+                <div class="grid-mvv">
+                    <h3 class="h3-s">Valores</h3>
+                    <p class="p-as1">Qualidade de produtos, compromisso com o cliente, inovação dos produtos e respeito
+                        com os clientes.</p>
+                </div>
+            </div>
+
+            <p class="p-as2">Horário de Funcionamento: <br>Seguna á Sexta das 10:00h ás 22:00h <br>Sabado e domingo das
+                12:00h ás 03:00h</p>
+        </aside>
+
+        <footer>
+            <ul class="icons">
+                <li><a href="mailto:goldenbeer@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="tel:(12)99791-2083"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+
+            <p class="p">&copy;Adega GoldenBeer | 2024</p>
+        </footer>
+    </div>
 </body>
+
 </html>
